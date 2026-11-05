@@ -1,0 +1,34 @@
+.form textarea { width: 100%; border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; background: var(--bg); resize: vertical; font-size: 1rem; }
+.form .chips { margin: 10px 0; }
+.live { margin: 12px 0 0; padding-left: 1.4em; color: var(--muted); max-height: 260px; overflow-y: auto; }
+.live li { margin: 2px 0; word-break: break-all; }
+.summary p { margin-top: 0; font-size: 1.02rem; }
+.meter { display: flex; height: 10px; border-radius: 99px; overflow: hidden; background: var(--surface-2); margin: 10px 0; }
+.meter i.good { background: var(--good); }
+.meter i.ok { background: var(--ok); }
+.meter i.unchecked { background: color-mix(in srgb, var(--muted) 45%, transparent); }
+.badge.muted { background: var(--surface-2); color: var(--muted); }
+.meter i.bad { background: var(--bad); }
+.stats { gap: 6px; }
+.chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.sec { margin-top: 24px; }
+.claim { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.claim.problem { border-color: color-mix(in srgb, var(--bad) 40%, var(--border)); }
+.claim-head { width: 100%; display: flex; gap: 10px; align-items: baseline; text-align: left; background: none; border: 0; padding: 10px 14px; }
+.claim-head .muted { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 30%; }
+.badge { display: inline-grid; place-items: center; min-width: 22px; height: 22px; border-radius: 50%; font-weight: 700; font-size: 0.8rem; flex: none; }
+.badge.good { background: color-mix(in srgb, var(--good) 20%, transparent); color: var(--good); }
+.badge.ok { background: color-mix(in srgb, var(--ok) 22%, transparent); color: var(--ok); }
+.badge.bad { background: color-mix(in srgb, var(--bad) 20%, transparent); color: var(--bad); }
+.claim-body { padding: 0 14px 12px 46px; }
+.verdict { margin: 0 0 8px; font-size: 0.92rem; }
+.verdict.bad { color: var(--bad); }
+.src { border-top: 1px dashed var(--border); padding-top: 8px; margin-top: 8px; font-size: 0.9rem; }
+.src a { word-break: break-all; }
+.checks { gap: 6px; margin: 4px 0; }
+.steps { padding-left: 1.4em; word-break: break-all; }
+@media (max-width: 640px) {
+  .claim-head { flex-wrap: wrap; }
+  .claim-head .muted { max-width: 100%; }
+  .claim-body { padding-left: 14px; }
+}
